@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class testDemoqa {
+public class TestDemoqa {
     String firstName = "Serg";
     String lastName = "Grey";
     String userEmail = "grey@gmail.com";
@@ -37,7 +37,7 @@ public class testDemoqa {
         $(".react-datepicker__day--020:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue(subjects).pressEnter();
         $("#hobbiesWrapper").$(new ByText("Reading")).click();
-        $("#uploadPicture").uploadFromClasspath("img/1.jpeg");
+        $("#uploadPicture").uploadFromClasspath("1.jpeg");
         $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(new ByText("NCR")).click();
