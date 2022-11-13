@@ -23,7 +23,7 @@ public class TestDemoqa {
 
     @Test
     void fillFormTest() {
-        open("https://demoqa.com/automation-practice-form");
+        open("/automation-practice-form");
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
         $("#firstName").setValue(firstName);
