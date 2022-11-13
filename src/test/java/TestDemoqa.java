@@ -29,7 +29,7 @@ public class TestDemoqa {
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(userEmail);
-        $("#gender-radio-2").doubleClick();
+        $("#gender-radio-1").doubleClick();
         $("#userNumber").setValue(userNumber);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("July");
@@ -45,7 +45,6 @@ public class TestDemoqa {
         $("#stateCity-wrapper").$(new ByText("Delhi")).click();
         $("#submit").click();
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Serg Grey"), text(userEmail), text("20 July,2000"), text("Male"), text(subjects), text(currentAddress));
     }
 }
 
