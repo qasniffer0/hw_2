@@ -44,7 +44,9 @@ public class TestDemoqa {
         $("#city").click();
         $("#stateCity-wrapper").$(new ByText("Delhi")).click();
         $("#submit").click();
+
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
+        $(".table-responsive").shouldHave(text("Serg Grey"), text(userEmail), text("20 July,2000"), text("Male"), text(subjects), text(currentAddress));
     }
 }
 
